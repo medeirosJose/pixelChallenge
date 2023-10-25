@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  color: #fff;
+  font-family: Outfit;
+}
+
+body {
+  background-color: #000013;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.textBox {
+  margin-right: 200px;
+}
+
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  /* layout */
+  width: 380px;
+  height: 96px;
+  /* typography */
+  font-family: Outfit;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #d6d6f2;
+}
+
+p {
+  /*layout*/
+  width: 380px;
+  height: 56px;
+  /* typography */
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 56px;
+  color: #d6d6f2;
+}
+
+a {
+  width: 107px;
+  height: 20px;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  gap: 8px;
+  background-color: #151557;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #e2e2f5;
+}
+
+.actions a {
+  margin-right: 16px;
+}
+
+a:hover{
+  background-color: #1a1a6e;
+}
