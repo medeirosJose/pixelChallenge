@@ -11,6 +11,10 @@ body {
 
 body {
   background-color: #000013;
+  background-image: url("Background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
@@ -29,8 +33,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*backdrop filter com gradient para fazer luzinha roxa*/
 }
 
+.animation::before {
+  content: "";
+  width: 50%;
+  height: 50%;
+  background: radial-gradient(#bf7bfb33, transparent);
+  filter: blur(150px);
+  position: absolute;
+}
 h1 {
   /* layout */
   width: 380px;
@@ -80,6 +93,6 @@ a {
   margin-right: 16px;
 }
 
-a:hover{
+a:hover {
   background-color: #1a1a6e;
 }
