@@ -1,0 +1,132 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  color: black;
+  font-family: Roboto;
+}
+
+.text {
+  margin-top: 16px;
+  width: 100%;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #e1e1e6;
+}
+
+h3 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #e1e1e6;
+}
+
+p {
+  font-size: 12px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.buttons > svg {
+  cursor: pointer;
+}
+
+.buttons > svg:hover {
+  transform: scale(1.15);
+  transition: all 0.1s ease-in-out;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2141;
+  padding: 40px;
+  border-radius: 16px;
+}
+.playing {
+  width: 100%;
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: #d9d9d930;
+  border-radius: 10px;
+}
+
+.progress-current {
+  height: 6px;
+  background-color: #d9d9d980;
+  transition: width 0.5s;
+  animation-name: progress;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  border-radius: 10px;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+p {
+  font-size: 14px;
+  color: #c4c4cc;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-height: 200px) {
+  body {
+    background-color: red;
+  }
+
+  .time {
+    display: none;
+  }
+  .progress-bar {
+    display: none;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+}
