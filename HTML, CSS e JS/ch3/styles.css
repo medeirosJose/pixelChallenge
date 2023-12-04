@@ -1,0 +1,133 @@
+body {
+  font-family: SOURCE SERIF PRO;
+  margin: 0;
+  padding: 0;
+  background-color: #feece0;
+  height: 100%;
+  color: white;
+}
+
+ol,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: SOURCE SERIF PRO;
+  color: #58190a;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  gap: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+}
+
+.upper {
+  height: 50vh;
+}
+
+.lower {
+  height: 50vh;
+  background-color: #9b6647;
+}
+
+.frame {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-text {
+  padding-left: 40px;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.title {
+  color: #feece0;
+  font-size: 2em;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.lista {
+  word-wrap: break-word;
+  align-items: flex-start;
+  font-size: 20px;
+}
+
+.lista li {
+  counter-increment: list-counter;
+  margin-bottom: 10px;
+  position: relative;
+}
+.lista ol {
+  padding-left: 30px;
+}
+.lista ul {
+  padding-left: 20px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  justify-content: center;
+}
+
+.icon-upper {
+  width: 32px;
+  height: 32px;
+}
+
+.porcoes {
+  display: flex;
+  color: #9b6647;
+  font-family: SOURCE SERIF PRO;
+  font-size: 1.85em;
+  font-weight: 400;
+  gap: 12px;
+}
+
+.amount {
+  font-weight: 700;
+  font-family: SOURCE SERIF PRO;
+}
