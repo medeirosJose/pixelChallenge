@@ -125,9 +125,90 @@ img {
   font-size: 1.85em;
   font-weight: 400;
   gap: 12px;
+  align-items: center;
+
 }
 
 .amount {
   font-weight: 700;
   font-family: SOURCE SERIF PRO;
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+  .upper {
+    height: 100%;
+  }
+  .frame {
+    flex-direction: column;
+    width: 100%;
+  }
+  img {
+    margin-top: 40px;
+    width: 75%;
+    height: 75%;
+  }
+  .frame .img {
+    align-content: center;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .food-text {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .porcoes {
+    font-size: 1.5em;
+  }
+  .porcoes img {
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+  }
+
+  .lower {
+    margin-top: 40px;
+    height: 100%;
+  }
+
+  .lista {
+    font-size: 1.2em;
+  }
+
+  .lista li {
+    margin-bottom: 5px;
+  }
+  .lista ol {
+    padding-left: 20px;
+  }
+  .lista ul {
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .heading {
+    margin-top: 2em;
+  }
+
+  .wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .icon-upper {
+    width: 24px;
+    height: 24px;
+  }
+  .amount {
+    font-size: 1.5em;
+  }
+
+  /*troca somente a segunda lista usando child*/
+  .lista:nth-child(2) {
+    margin-bottom: 1em;
+  }
 }
