@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+body {
+  background: #111827;
+  color: #e5e7eb;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  line-height: 1.5em;
+  font-size: 16px;
+}
+
+.teste {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This will center the columns-container on the screen */
+  width: 100%; /* This will make the screen-container full width */
+  max-width: 1200px; /* Adjust this value based on your design requirements */
+  margin: auto; /* This will center the screen-container horizontally */
+  gap: 20px; /* This adds space between the columns-container and the button */
+  justify-content: center;
+  background: #1f2937;
+
+  border-radius: 8px;
+  border: 1px solid #374151;
+  padding: 2em;
+}
+
+.columns-container {
+  display: flex;
+  width: 100%; /* This will make the columns-container take full width of its parent */
+  gap: 32px; /* Adjust the space between the two columns */
+}
+
+.left-column,
+.right-column {
+  flex: 1; /* This will divide the space equally between the two columns */
+}
+.input-group {
+  margin-bottom: 1em;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  display: inline-flex;
+}
+
+.input-group.half-width {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.input-group.half-width:last-child {
+  margin-right: 0;
+}
+
+label {
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+  display: inline-flex;
+  color: #e5e7eb;
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  line-height: 1em;
+  word-wrap: break-word;
+  padding-bottom: 0.5em;
+}
+
+input {
+  align-self: stretch;
+  padding: 12px;
+  background: #111827;
+  color: #9ca3af;
+  border-radius: 4px;
+  border: 1px solid #374151;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.input-group input:focus {
+  border: 1px solid red !important;
+}
+
+.submit-button {
+  width: 100%; /* This will make the button take full width of its parent */
+  padding: 10px 20px; /* Adjust padding for the button size */
+  border: none; /* Adjust or remove borders based on your design */
+  background-color: #a855f7; /* Use your button's background color */
+  color: white; /* Adjust the text color as needed */
+  font-size: 16px; /* Adjust the font size as needed */
+  cursor: pointer; /* Changes the cursor to indicate the button is clickable */
+  border-radius: 4px; /* Rounds the corners of the button */
+  /* Add any other styles for your button */
+}
+
+.submit-button:hover {
+  background: #a450ee;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  display: inline-flex;
+}
+
+.card {
+  width: 280px;
+  height: 168px;
+  position: relative;
+  background: #111827;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #374151;
+}
+
+/* Add classes for each circle with the same styles and use additional classes for specific styles */
+.purple-circle {
+  position: absolute;
+  background: #a855f7;
+  border-radius: 9999px;
+}
+
+.big-circle {
+  width: 134.02px;
+  height: 208.97px;
+  left: 93.24px;
+  top: 44px;
+  transform: rotate(-45deg);
+  transform-origin: 0 0;
+}
+
+.medium-circle {
+  width: 170.33px;
+  height: 265.59px;
+  left: -114.12px;
+  top: 84px;
+  opacity: 0.5;
+}
+
+/* Similar classes for teal circles */
+
+.card-overlay {
+  width: 280px;
+  height: 168px;
+  position: absolute;
+  background: rgba(17, 24, 39, 0.4);
+  backdrop-filter: blur(48px);
+}
+
+.card-number {
+  width: 232px;
+  position: absolute;
+  left: 24px;
+  top: 80px; /* Adjust this to position the card number at the top */
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+  /* make it bold*/
+  font-weight: 600;
+}
+
+.card-owner {
+  width: 232px;
+  position: absolute;
+  left: 24px;
+  top: 128px; /* Adjust this to position the card owner below the card number */
+  justify-content: flex-start; /* Align to the left */
+  align-items: center;
+  display: inline-flex;
+}
+
+.card-expiration {
+  width: 232px;
+  position: absolute;
+  left: 24px;
+  top: 128px; /* Adjust this to position it next to the card owner on the right */
+  justify-content: flex-end; /* Align to the right */
+  align-items: center;
+  display: inline-flex;
+}
+
+/* Additional styles for the numbers, dots, bottom and top groups would go here */
+
+.security-message {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  display: inline-flex;
+}
+
+.security-text {
+  color: #e5e7eb;
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+}
+
+/* Continue adding classes and separating styles as needed for the rest of the elements */

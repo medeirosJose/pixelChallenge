@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cartão de Crédito</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="teste">
+      <div class="screen-container">
+        <div class="columns-container">
+          <div class="left-column">
+            <div class="card-form">
+              <div class="input-group">
+                <label for="card-number">Número do cartão</label>
+                <input
+                  type="text"
+                  id="card-number"
+                  placeholder="4002 8922 11"
+                  oninput="updateCardNumber(this.value)"
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="cardholder-name">Nome do titular</label>
+                <input
+                  type="text"
+                  id="cardholder-name"
+                  placeholder="Nome como está no seu cartão"
+                  oninput="updateCardholderName(this.value)"
+                />
+              </div>
+              <div class="input-group half-width">
+                <label for="expiration-date">Validade</label>
+                <input
+                  type="month"
+                  id="expiration-date"
+                  placeholder="mm/aa"
+                  oninput="updateExpirationDate(this.value)"
+                />
+              </div>
+
+              <div class="input-group half-width">
+                <label for="cvv"
+                  >CVV
+                  <img
+                    src="Question.svg"
+                    alt="Aqueles números no verso do seu cartão."
+                /></label>
+                <input type="password" id="cvv" placeholder="***" />
+              </div>
+            </div>
+          </div>
+          <div class="right-column">
+            <div class="container">
+              <div class="card">
+                <div class="purple-circle big-circle"></div>
+                <div class="purple-circle medium-circle"></div>
+                <div class="teal-circle big-teal"></div>
+                <div class="teal-circle small-teal"></div>
+                <div class="teal-circle medium-teal"></div>
+                <div class="card-overlay"></div>
+                <div class="card-number">
+                  <strong>**** **** **** ****</strong>
+                </div>
+                <div class="card-owner">Fulano de Tal</div>
+                <div class="card-expiration"><strong>12/25</strong></div>
+              </div>
+              <div class="security-message">
+                  <img src="ShieldCheck.svg" alt="" />
+                <div class="security-text">Seus dados estão seguros</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="submit-button" disabled>Adicionar cartão</button>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

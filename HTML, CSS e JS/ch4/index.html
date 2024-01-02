@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página de Login</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Challenge 4" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="full">
+      <div class="column-left">
+        <div class="content">
+          <div class="logo">
+            <img src="logo.svg" alt="" />
+          </div>
+          <h1>Acesse a plataforma</h1>
+          <p>
+            Faça login ou registre-se para começar a construir seus projetos
+            ainda hoje.
+          </p>
+        </div>
+        <div class="form-container">
+          <form action="/logadoComSucesso" method="post">
+            <div class="field-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+              />
+            </div>
+
+            <div class="field-group">
+              <label for="password">Senha</label>
+              <a href="/forgot-password" class="forgot-password"
+                >Esqueceu a senha?</a
+              >
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Digite sua senha"
+              />
+              <button
+                type="button"
+                class="show-password"
+                onclick="togglePasswordVisibility()"
+              >
+                <img src="eye-off.svg" alt="Mostrar senha" />
+              </button>
+            </div>
+            <input type="submit" value="Entrar" class="submit-button" />
+          </form>
+          <div class="signup">
+            <span class="text-normal">Ainda não tem uma conta? </span>
+            <a href="/signup" class="text-link">Inscreva-se</a>
+          </div>
+        </div>
+      </div>
+      <div class="column-right"></div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
