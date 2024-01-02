@@ -1,0 +1,33 @@
+.tag {
+  align-items: flex-start;
+  background-color: var(--midnight-x);
+  border: 1px solid;
+  border-color: var(--cinza-da-pixel);
+  border-radius: 5px;
+  display: inline-flex;
+  gap: 10px;
+  overflow: hidden;
+  padding: 6px 13px;
+  position: relative;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #dfdfe4;
+  margin-left: 16px;
+}
+
+.aux {
+  color: var(--cinza-da-pixel);
+  font-family: var(--detail-font-family);
+  font-size: var(--detail-font-size);
+  font-style: var(--detail-font-style);
+  font-weight: var(--detail-font-weight);
+  letter-spacing: var(--detail-letter-spacing);
+  line-height: var(--detail-line-height);
+  margin-top: -1px;
+  position: relative;
+  width: fit-content;
+}

@@ -1,0 +1,14 @@
+.tag {
+  height: 29px;
+  width: 321px;
+}
+
+.job {
+  color: #dfdfe4;
+  font-family: var(--hilight-font-family);
+  font-size: var(--hilight-font-size);
+  font-style: var(--hilight-font-style);
+  font-weight: var(--hilight-font-weight);
+  letter-spacing: var(--hilight-letter-spacing);
+  line-height: var(--hilight-line-height);
+}

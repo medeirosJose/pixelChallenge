@@ -34,7 +34,7 @@ export const About = () => {
           <Image
             src="/fliperama.jpg"
             width={624}
-            height={864}
+            height={800}
             alt="Imagem de um fliperama"
           />
         </div>

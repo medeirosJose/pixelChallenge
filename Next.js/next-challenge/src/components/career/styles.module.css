@@ -1,5 +1,5 @@
-.about {
-  margin-top: 115px;
+.career {
+  width: 100%;
 }
 
 .title {
@@ -12,20 +12,15 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 115px;
 }
 
-.group {
-  display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
-  gap: 50px;
+.cardsGroup {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.text {
-  font-family: "Montserrat";
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0em;
-  text-align: left;
+.card {
+  margin-bottom: 24px;
 }

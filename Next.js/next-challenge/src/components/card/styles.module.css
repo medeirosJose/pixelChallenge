@@ -1,0 +1,28 @@
+.cardCareer {
+  background-color: var(--midnight-x);
+  border: 2px solid;
+  border-color: var(--cinza-da-pixel);
+  width: 400px;
+  padding: 25px;
+}
+
+.roleTitle {
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.tags {
+  margin-top: 16px;
+  display: flex;
+}
