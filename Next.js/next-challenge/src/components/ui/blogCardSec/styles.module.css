@@ -1,0 +1,15 @@
+.card {
+  width: 24.375rem;
+  height: 20.75rem;
+  flex-shrink: 0;
+}
+
+.cardTitle {
+  color: #dfdfe4;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: justify;
+}

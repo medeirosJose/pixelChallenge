@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  margin: 0px 6.25rem 0px 6.25rem;
+}
+
+.cardContent {
+  margin: 0px 1.25rem 0px 1.25rem;
+}
+
+.cardTitle {
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cardAuthorDate {
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.5rem;
+}
+
+.cardDescription {
+  width: 100%;
+  height: 10rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  color: #dfdfe4;
+  text-overflow: ellipsis;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}

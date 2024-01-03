@@ -1,0 +1,7 @@
+.card {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2.2rem 6.25rem 0px 6.25rem;
+  gap: 2.2rem;
+}

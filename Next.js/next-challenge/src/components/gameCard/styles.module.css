@@ -1,0 +1,45 @@
+.card {
+  margin: 0 6.25rem 6rem 6.25rem;
+}
+
+.cardImage {
+  display: flex;
+  justify-content: center;
+}
+
+.buyInfo {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  width: 100%;
+  gap: 1.25rem;
+  align-items: center;
+}
+.buyPrice {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.buyButton {
+  padding: 0.625rem 1.25rem;
+  background-color: #fa8400;
+  color: #023047;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.cardDescription {
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  height: 100%;
+}

@@ -23,13 +23,8 @@ export const Header = ({ icon = "icon.svg" }) => {
             <Image src="/logo.svg" alt="Icon" width={50} height={50} />
           </div>
           <div className={styles.menu}>
-            <Link href="">
-              <button
-                className={styles.menuItem}
-                onClick={() => handleButtonClick("Deve mover para baixo")}
-              >
-                Jogos
-              </button>
+            <Link href="/game">
+              <button className={styles.menuItem}>Jogos</button>
             </Link>
             <Link href="">
               <button
@@ -40,16 +35,11 @@ export const Header = ({ icon = "icon.svg" }) => {
               </button>
             </Link>
             <Link href="/blog">
-              <button
-                className={styles.menuItem}
-                onClick={() => handleButtonClick("Página Própria")}
-              >
-                Blog
-              </button>
+              <button className={styles.menuItem}>Blog</button>
             </Link>
             <Link href="">
               <button
-                className={styles.menuItem}
+                className={`${styles.menuItem} ${styles.carreira}`}
                 onClick={() => handleButtonClick("Deve mover para baixo")}
               >
                 Carreira

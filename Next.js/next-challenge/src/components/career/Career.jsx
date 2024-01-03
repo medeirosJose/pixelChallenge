@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 import CardCareer from "../card/CardCareer";
+import Link from "next/link";
 
 export const Career = () => {
   return (
@@ -14,6 +15,7 @@ export const Career = () => {
               workingModelText="CLT"
               tagText="DEV"
             />
+            <Link href="/jobForm">Link to Form</Link>
           </div>
           <div className={styles.card}>
             <CardCareer
