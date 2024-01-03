@@ -1,0 +1,15 @@
+.gameSection {
+  margin: 2rem 6.25rem 0 6.25rem;
+}
+
+.gameImageMain {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.gameContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}

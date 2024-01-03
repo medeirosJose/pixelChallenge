@@ -34,6 +34,10 @@
   font-weight: 400;
   line-height: 2rem;
 }
+.buyButton:hover {
+  color: #001e2d;
+  background-color: #fa8400bb;
+}
 
 .cardDescription {
   font-family: Montserrat;

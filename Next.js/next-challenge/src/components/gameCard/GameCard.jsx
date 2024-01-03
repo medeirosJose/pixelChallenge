@@ -13,7 +13,9 @@ export const GameCard = ({ title, price, image, link, description }) => {
           <Image src={image} alt="Imagem do jogo" width={1240} height={490} />
         </div>
         <div className={styles.buyInfo}>
-          <p className={styles.buyPrice}>Valor: {price}</p>
+          <p className={styles.buyPrice}>
+            <strong>Valor:</strong> {price}
+          </p>
           <a href={link} className={styles.buyButton}>
             Comprar
           </a>
