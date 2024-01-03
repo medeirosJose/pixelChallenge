@@ -25,7 +25,7 @@ export const Header = ({ icon = "icon.svg" }) => {
             <Image src="/logo.svg" alt="Icon" width={50} height={50} />
           </div>
           <div className={styles.menu}>
-            <Link href="/game">
+            <Link href="/">
               <button className={styles.menuItem}>Jogos</button>
             </Link>
             <Link href="">
