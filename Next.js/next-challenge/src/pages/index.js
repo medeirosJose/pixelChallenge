@@ -40,14 +40,8 @@ export default function Home() {
     <>
       {console.log("na home", gamesData)}
       <Header icon="image.svg" />
-      <GameSection
-        gameData={gamesData}
-        img1="/pacman.png"
-        img2="/pacman2.png"
-        img3="/space.png"
-        img4="/tetris.png"
-      />
-      <About />
+      <GameSection gameData={gamesData} />
+      <About id="about" />
       <Career />
       <Footer />
     </>
