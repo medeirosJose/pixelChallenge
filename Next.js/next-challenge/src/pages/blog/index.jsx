@@ -1,39 +1,54 @@
+// pages/blog.jsx
 import { Header } from "@/components/header/header";
 import { Footer } from "@/components/footer/Footer";
 import { Title } from "@/components/ui/title/Title";
 import BlogCardPri from "@/components/ui/blogCardPri/BlogCardPri";
 import BlogCardSec from "@/components/ui/blogCardSec/BlogCardSec";
 import styles from "./styles.module.css";
+import { sanityClient } from "@/utils/sanity";
 
-export const Blog = () => {
+const Blog = ({ posts }) => {
+  console.log("posts", posts);
+
   return (
     <>
       <Header />
       <Title title="Blog"></Title>
       <BlogCardPri
-        title="O impacto dos jogos retrô na indústria de desenvolvimento de jogos"
-        author="Guilherme Santos"
-        date="23/04/2023"
-        description="Os jogos retrô têm tido um impacto significativo na indústria de desenvolvimento de jogos, tanto do ponto de vista comercial quanto cultural. Com o ressurgimento do interesse em jogos retrô, impulsionado pela nostalgia e a busca por experiências de jogo mais simples, muitas empresas estão explorando esse gênero e desenvolvendo jogos que lembram os clássicos do passado."
+        key={posts[0].title}
+        title={posts[0].title}
+        author={posts[0].author}
+        date={posts[0].date}
+        description={posts[0].synopsis}
+        image={posts[0].img}
       />
       <div className={styles.card}>
-        <BlogCardSec
-          title="Como desenvolver jogos retrô com um toque moderno"
-          image="/blogImg2.png"
-        />
-        <BlogCardSec title="Criação de arte pixelada" image="/blogImg2.png" />
-        <BlogCardSec
-          title="Trilha sonora em jogos retrô"
-          image="/blogImg2.png"
-        />
-        <BlogCardSec
-          title="As influências históricas dos jogos retrô na cultura pop"
-          image="/blogImg2.png"
-        />
+        {posts.slice(1).map((post) => (
+          <BlogCardSec key={post.title} title={post.title} image={post.img} />
+        ))}
       </div>
       <Footer />
     </>
   );
 };
+
+export async function getStaticProps() {
+  const posts = await sanityClient.fetch(
+    `*[_type == "post"] | order(_createdAt asc) {
+      title,
+      author,
+      date,
+      synopsis,
+      text,
+      "img": img.asset->url
+    }`
+  );
+
+  return {
+    props: {
+      posts,
+    },
+  };
+}
 
 export default Blog;

@@ -3,42 +3,22 @@ import styles from "./styles.module.css";
 import CardCareer from "../card/CardCareer";
 import Link from "next/link";
 
-export const Career = () => {
+export const Career = ({ data }) => {
   return (
     <>
       <div id="career">
         <div className={styles.title}>Carreira</div>
         <div className={styles.career}>
           <div className={styles.cardsGroup}>
-            <div className={styles.card}>
-              <CardCareer
-                roleText="Desenvolvedor Front-End"
-                workingModelText="CLT"
-                tagText="DEV"
-              />
-              <Link href="/jobForm">Link to Form</Link>
-            </div>
-            <div className={styles.card}>
-              <CardCareer
-                roleText="Desenvolvedor Back-End"
-                workingModelText="PJ"
-                tagText="DEV"
-              />
-            </div>
-            <div className={styles.card}>
-              <CardCareer
-                roleText="Cloud Engineer"
-                workingModelText="CLT"
-                tagText="DEV"
-              />
-            </div>
-            <div className={styles.card}>
-              <CardCareer
-                roleText="Cloud Engineer"
-                workingModelText="CLT"
-                tagText="DEV"
-              />
-            </div>
+            {data.map((data, index) => (
+              <div className={styles.card} key={index}>
+                <CardCareer
+                  roleText={data.roleText}
+                  workingModelText={data.workingModelText}
+                  tagText={data.tagText}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+// Home.jsx
 import { Header } from "@/components/header/header";
 import { About } from "@/components/about/About";
 import { Career } from "@/components/career/Career";
@@ -7,13 +8,13 @@ import "@fontsource/montserrat";
 import "@fontsource/press-start-2p";
 import { createClient } from "next-sanity";
 
-export default function Home({ gamesData }) {
+export default function Home({ gamesData, careers }) {
   return (
     <>
       <Header icon="image.svg" />
       <GameSection gameData={gamesData} />
       <About id="about" />
-      <Career />
+      <Career data={careers} />
       <Footer />
     </>
   );
@@ -35,10 +36,17 @@ export async function getStaticProps() {
       "img": img.asset->url
     }`
   );
-
+  const careers = await client.fetch(
+    `*[_type == "career"] | order(_createdAt desc) {
+      roleText,
+      workingModelText,
+      tagText,
+    }`
+  );
   return {
     props: {
       gamesData,
+      careers,
     },
   };
 }
