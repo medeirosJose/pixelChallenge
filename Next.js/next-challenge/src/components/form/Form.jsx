@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./styles.module.css";
 import { Title } from "../ui/title/Title";
 import CTAButton from "../ui/buttons/cta/CTAButton";
@@ -6,7 +6,17 @@ import ReactDOM from "react-dom";
 import Image from "next/image";
 import { useState } from "react";
 
+// fecha o modal após 2 segundos e redireciona para a home
 const SuccessModal = ({ onClose }) => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      window.location.href = "/";
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // cria um portal para renderizar o modal fora do componente Form
   return ReactDOM.createPortal(
     <div className={styles.modalOverlay}>
       <div className={styles.modalContent}>
@@ -31,6 +41,7 @@ export default SuccessModal;
 
 export const Form = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsFormSubmitted(true);

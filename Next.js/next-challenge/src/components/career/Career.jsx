@@ -12,11 +12,13 @@ export const Career = ({ data }) => {
           <div className={styles.cardsGroup}>
             {data.map((data, index) => (
               <div className={styles.card} key={index}>
-                <CardCareer
-                  roleText={data.roleText}
-                  workingModelText={data.workingModelText}
-                  tagText={data.tagText}
-                />
+                <Link href="/jobForm">
+                  <CardCareer
+                    roleText={data.roleText}
+                    workingModelText={data.workingModelText}
+                    tagText={data.tagText}
+                  />
+                </Link>
               </div>
             ))}
           </div>
