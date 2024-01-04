@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 export const GameSection = ({ gameData, img1, img2, img3, img4 }) => {
   console.log("em gamesection", gameData);
   return (
-    <div className={styles.gameSection}>
+    <div className={styles.gameSection} id="games">
       <div>
         <Link
           href={{
