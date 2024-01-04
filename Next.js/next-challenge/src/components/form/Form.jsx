@@ -32,7 +32,6 @@ export default SuccessModal;
 export const Form = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const handleSubmit = (e) => {
-    console.log("Formulário enviado");
     e.preventDefault();
     setIsFormSubmitted(true);
   };
