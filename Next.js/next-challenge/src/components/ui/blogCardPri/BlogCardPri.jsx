@@ -12,6 +12,7 @@ const BlogCardPri = ({ title, author, date, description, image, link }) => {
           alt="Imagem do post"
           width={500}
           height={300}
+          style={{ borderRadius: "6px" }}
         />
       </div>
       <div className={styles.cardContent}>

@@ -7,7 +7,13 @@ const BlogCardSec = ({ title, image, link }) => {
   return (
     <div className={styles.card}>
       <div className={styles.cardImage}>
-        <Image src={image} alt="Imagem do post" width={390} height={220} />
+        <Image
+          src={image}
+          alt="Imagem do post"
+          width={390}
+          height={220}
+          style={{ borderRadius: "3px" }}
+        />
       </div>
       <div className={styles.cardContent}>
         <h2 className={styles.cardTitle}>{title}</h2>
