@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1.25rem;
+  
 }
 
 .gameContainer {
@@ -15,4 +16,5 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   justify-items: center;
+  
 }

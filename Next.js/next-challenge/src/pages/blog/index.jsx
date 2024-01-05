@@ -21,10 +21,19 @@ const Blog = ({ posts }) => {
         date={posts[0].date}
         description={posts[0].synopsis}
         image={posts[0].img}
+        link={posts[0].title}
       />
       <div className={styles.card}>
         {posts.slice(1).map((post) => (
-          <BlogCardSec key={post.title} title={post.title} image={post.img} />
+          <BlogCardSec
+            key={post.title}
+            title={post.title}
+            image={post.img}
+            author={post.author}
+            date={post.date}
+            description={post.synopsis}
+            link={post.title}
+          />
         ))}
       </div>
       <Footer />

@@ -1,38 +1,48 @@
+// components/ui/blogCardSec/BlogCardSec.jsx
 import Image from "next/image";
 import React from "react";
 import styles from "./styles.module.css";
 import PropTypes from "prop-types";
+import Link from "next/link";
 
-const BlogCardPri = ({ title, author, date, description, image, link }) => {
+const BlogCardSec = ({ title, image, link, description, author, date }) => {
   return (
     <div className={styles.card}>
-      <div className={styles.cardImage}>
-        <Image
-          src={"/blogImg1.jpg"}
-          alt="Imagem do post"
-          width={500}
-          height={300}
-          style={{ borderRadius: "6px" }}
-        />
-      </div>
-      <div className={styles.cardContent}>
-        <h2 className={styles.cardTitle}>{title}</h2>
-        <p className={styles.cardAuthorDate}>
-          Por {author}, {date}
-        </p>
-        <p className={styles.cardDescription}>{description}</p>
-      </div>
+      <Link href={`/blog/${encodeURIComponent(link)}`}>
+        <div className={styles.cardWrapper}>
+          <div className={styles.cardImage}>
+            <Image
+              src={image}
+              alt="Imagem do post"
+              width={390}
+              height={220}
+              style={{ borderRadius: "3px" }}
+            />
+          </div>
+          <div className={styles.cardContent}>
+            <h2 className={styles.cardTitle}>{title}</h2>
+            {description && (
+              <p className={styles.cardDescription}>{description}</p>
+            )}
+            {author && date && (
+              <p className={styles.cardAuthorDate}>
+                Por {author}, {date}
+              </p>
+            )}
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };
 
-BlogCardPri.propTypes = {
+BlogCardSec.propTypes = {
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
+  description: PropTypes.string,
+  author: PropTypes.string,
+  date: PropTypes.string,
 };
 
-export default BlogCardPri;
+export default BlogCardSec;

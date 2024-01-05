@@ -21,10 +21,7 @@ export const GameCard = ({ title, price, image, link, description }) => {
           </a>
         </div>
         <div className={styles.cardContent}>
-          <p
-            className={styles.cardDescription}
-            dangerouslySetInnerHTML={{ __html: description }}
-          ></p>
+          <p className={styles.cardDescription}>{description}</p>
         </div>
       </div>
     </>

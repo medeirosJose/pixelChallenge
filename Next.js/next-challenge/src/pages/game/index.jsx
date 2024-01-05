@@ -2,7 +2,6 @@ import { Header } from "@/components/header/header";
 import { Footer } from "@/components/footer/Footer";
 import GameCard from "@/components/gameCard/GameCard";
 import styles from "./styles.module.css";
-import { useEffect } from "react";
 import { useRouter } from "next/router";
 
 export const Game = () => {
@@ -11,6 +10,7 @@ export const Game = () => {
   return (
     <>
       <Header />
+      {/* página de um jogo específico */}
       <div className={styles.card}>
         <GameCard
           title={data.title}

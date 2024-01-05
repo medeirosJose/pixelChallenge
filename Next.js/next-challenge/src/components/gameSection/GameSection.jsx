@@ -30,7 +30,7 @@ export const GameSection = ({ gameData }) => {
                 as={`/game/${game.title}`}
               >
                 <div>
-                  <Image src={game.img} alt="Icon" width={400} height={300} />
+                  <Image src={game.img} alt="Icon" width={400} height={300}  />
                 </div>
               </Link>
             );
