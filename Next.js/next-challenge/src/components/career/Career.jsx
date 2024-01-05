@@ -12,7 +12,7 @@ export const Career = ({ data }) => {
           <div className={styles.cardsGroup}>
             {data.map((data, index) => (
               <div className={styles.card} key={index}>
-                <Link href="/jobForm">
+                <Link href={`/jobForm?roleText=${data.roleText}`}>
                   <CardCareer
                     roleText={data.roleText}
                     workingModelText={data.workingModelText}

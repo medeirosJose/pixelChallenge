@@ -18,8 +18,11 @@
 .cardsGroup {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-items: center;
 }
 
 .card {
   margin-bottom: 24px;
+
 }

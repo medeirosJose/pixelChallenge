@@ -5,7 +5,7 @@ import CTAButton from "../ui/buttons/cta/CTAButton";
 import ReactDOM from "react-dom";
 import Image from "next/image";
 import { useState } from "react";
-
+import { useRouter } from "next/router";
 // fecha o modal após 2 segundos e redireciona para a home
 const SuccessModal = ({ onClose }) => {
   useEffect(() => {
@@ -41,7 +41,8 @@ export default SuccessModal;
 
 export const Form = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
+  const router = useRouter();
+  const { roleText } = router.query;
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsFormSubmitted(true);
@@ -53,6 +54,7 @@ export const Form = () => {
   return (
     <>
       <Title title="Formulário de Vaga" />
+      <div className={styles.roleTitle}>{roleText}</div>
       <div className={styles.form}>
         <form onSubmit={handleSubmit}>
           <div className={styles.formGroup}>

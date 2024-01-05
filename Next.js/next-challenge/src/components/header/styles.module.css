@@ -20,9 +20,9 @@
 }
 
 .logoContainer {
-  height: 40px;
-  top: 50px;
-  left: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .JOJOS {
@@ -32,8 +32,13 @@
   font-weight: 400;
   line-height: normal;
   color: #ffffff;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
-
+.laranjaO {
+  color: orange;
+  font-weight: bold;
+}
 .menu {
   display: flex;
   width: 100%;
