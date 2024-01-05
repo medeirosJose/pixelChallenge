@@ -7,7 +7,6 @@ import PropTypes from "prop-types";
 export const GameSection = ({ gameData }) => {
   return (
     <div className={styles.gameSection} id="games">
-      <div>
         <Link
           href={{
             pathname: "/game",
@@ -37,7 +36,6 @@ export const GameSection = ({ gameData }) => {
               );
             }
           })}
-        </div>
       </div>
     </div>
   );

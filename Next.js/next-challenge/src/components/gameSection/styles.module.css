@@ -1,5 +1,5 @@
 .gameSection {
-  margin: 2rem 6.25rem 0 6.25rem;
+  margin: 2rem 6.25rem 0px 6.25rem;
 }
 
 .gameImageMain {
@@ -9,7 +9,10 @@
 }
 
 .gameContainer {
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
+  justify-items: center;
 }
