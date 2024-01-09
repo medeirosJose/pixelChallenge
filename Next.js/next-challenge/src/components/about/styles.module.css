@@ -11,21 +11,21 @@
   line-height: 3.4375rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* converted from 20px */
 }
 
 .group {
   display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
-  gap: 50px;
+  margin-left: 6.25rem; /* converted from 100px */
+  margin-right: 6.25rem; /* converted from 100px */
+  gap: 3.125rem; /* converted from 50px */
 }
 
 .text {
   font-family: "Montserrat";
-  font-size: 20px;
+  font-size: 1.25rem; /* converted from 20px */
   font-weight: 400;
-  line-height: 32px;
+  line-height: 2rem; /* converted from 32px */
   letter-spacing: 0em;
   text-align: left;
   color: #dfdfe4bb;

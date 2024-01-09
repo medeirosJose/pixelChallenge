@@ -5,18 +5,18 @@
 
 .cardWrapper {
   display: flex;
-  width: 100%; /* Certifica-se de que o wrapper ocupe 100% da largura */
+  width: 100%; 
 }
 
 .cardImage {
-  width: 40%; /* Defina a largura da imagem como 40% da largura total */
-  max-width: 100%; /* Garante que a imagem não ultrapasse a largura máxima da div */
+  width: 40%; 
+  max-width: 100%; 
 }
 
 .cardContent {
   display: flex;
   flex-direction: column;
-  width: 60%; /* Defina a largura do conteúdo como 60% da largura total */
+  width: 60%; 
   margin: 0px 1.25rem 0px 1.25rem;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .cardImage img {
-  width: 100%; /* Certifica-se de que a imagem ocupe 100% da largura da div cardImage */
-  height: auto; /* Mantém a proporção da imagem */
+  width: 100%;
+  height: auto;
   border-radius: 3px;
 }

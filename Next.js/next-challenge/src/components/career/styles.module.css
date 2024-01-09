@@ -11,18 +11,17 @@
   line-height: 3.4375rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  margin-top: 115px;
+  margin-bottom: 1.25rem; /* 20px converted to rem */
+  margin-top: 7.1875rem; /* 115px converted to rem */
 }
 
 .cardsGroup {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 0.0625rem; /* 1px converted to rem */
   justify-items: center;
 }
 
 .card {
-  margin-bottom: 24px;
-
+  margin-bottom: 1.5rem; /* 24px converted to rem */
 }

@@ -2,12 +2,12 @@
   align-items: center;
   background-color: #fa8400;
   display: inline-flex;
-  gap: 10px;
+  gap: 0.625rem;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   position: relative;
   color: #023047;
-  width: 37.5rem;
+  width: 23.4375rem;
   font-family: "Montserrat";
   border: 0;
   font-size: 1.25rem;
