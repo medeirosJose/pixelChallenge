@@ -1,7 +1,7 @@
 // pages/blog/[slug].jsx
 import { useRouter } from "next/router";
-import { Header } from "@/components/header/header";
-import { Footer } from "@/components/footer/Footer";
+import { Header } from "../../components/header/Header";
+import { Footer } from "../../components/footer/Footer";
 import styles from "./styles.module.css";
 import { sanityClient } from "@/utils/sanity";
 

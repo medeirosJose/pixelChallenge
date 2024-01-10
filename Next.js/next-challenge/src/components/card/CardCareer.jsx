@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles.module.css";
 
-import { WorkingModel } from "./workingModel/WorkingModel";
-import { Role } from "./role/role";
-import { Tag } from "./tag/Tag";
+import WorkingModel from "./workingModel/WorkingModel";
+import Role from "./role/role";
+import Tag from "./tag/Tag";
 
 const CardCareer = ({ workingModelText, roleText, tagText }) => {
   return (
