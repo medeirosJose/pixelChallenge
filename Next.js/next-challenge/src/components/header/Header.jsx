@@ -27,6 +27,15 @@ export const Header = () => {
     }
   };
 
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
   return (
     <div className={styles.header}>
       <div className={styles.headerItems}>
@@ -44,7 +53,7 @@ export const Header = () => {
             </NextLink>
           </div>
 
-          <div className={styles.menu}>
+          <div className={styles.menu} id={"myLinks"}>
             <ScrollLink to="games" smooth={true} offset={-50} duration={1000}>
               <button
                 className={styles.menuItem}
@@ -77,6 +86,11 @@ export const Header = () => {
                 Carreira
               </button>
             </ScrollLink>
+          </div>
+          <div className={styles.sanduiche}>
+            <a className={styles.icon} onClick={myFunction}>
+              <img src="/sanduiche.svg" alt="Icon" width={50} height={50} />
+            </a>
           </div>
         </div>
       </div>

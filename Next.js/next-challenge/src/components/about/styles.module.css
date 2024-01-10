@@ -2,6 +2,16 @@
   margin-top: 3rem;
 }
 
+.img {
+  width: 39rem;
+  height: 50rem;
+}
+
+.img img {
+  height: 100%;
+  object-fit: cover;
+}
+
 .title {
   color: var(--sunrise-x-laranjinha, #fa8400);
   font-family: "Press Start 2P";
@@ -11,22 +21,53 @@
   line-height: 3.4375rem;
   display: flex;
   justify-content: center;
-  margin-bottom: 1.25rem; /* converted from 20px */
+  margin-bottom: 1.25rem; 
 }
 
 .group {
   display: flex;
-  margin-left: 6.25rem; /* converted from 100px */
-  margin-right: 6.25rem; /* converted from 100px */
-  gap: 3.125rem; /* converted from 50px */
+  margin-left: 6.25rem; 
+  margin-right: 6.25rem; 
+  gap: 3.125rem; 
 }
 
 .text {
   font-family: "Montserrat";
-  font-size: 1.25rem; /* converted from 20px */
+  font-size: 1.25rem; 
   font-weight: 400;
-  line-height: 2rem; /* converted from 32px */
+  line-height: 2rem; 
   letter-spacing: 0em;
   text-align: left;
   color: #dfdfe4bb;
+}
+
+/*mobile */
+@media screen and (max-width: 767px) {
+  .group {
+    flex-direction: column;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    gap: 1.25rem;
+  }
+
+  .text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .img {
+    width: 100% !important;
+    height: 110vw;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    line-height: 2.0625rem;
+    margin-top: 3.4375rem;
+    margin-bottom: 1rem;
+  }
 }

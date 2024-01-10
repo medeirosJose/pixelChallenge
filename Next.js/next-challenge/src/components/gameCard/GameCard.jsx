@@ -7,7 +7,9 @@ import PropTypes from "prop-types";
 export const GameCard = ({ title, price, image, link, description }) => {
   return (
     <>
-      <Title title={title}></Title>
+      <div className={styles.pageTitle}>
+        <Title title={title}></Title>
+      </div>
       <div className={styles.card}>
         <div className={styles.cardImage}>
           <Image src={image} alt="Imagem do jogo" width={1240} height={490} />

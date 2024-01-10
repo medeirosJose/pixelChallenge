@@ -34,12 +34,7 @@ export const About = () => {
           </span>
         </div>
         <div className={styles.img}>
-          <Image
-            src="/fliperama.jpg"
-            width={624}
-            height={800}
-            alt="Imagem de um fliperama"
-          />
+          <img src="/fliperama.jpg" alt="Imagem de um fliperama" />
         </div>
       </div>
     </div>

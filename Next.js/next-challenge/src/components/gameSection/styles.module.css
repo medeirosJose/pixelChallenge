@@ -6,7 +6,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 1.25rem;
-  
 }
 
 .gameContainer {
@@ -16,5 +15,44 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   justify-items: center;
-  
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .gameSection {
+    margin: 2rem 1.25rem 0px 1.25rem;
+  }
+  .gameImageMain {
+    display: flex;
+    justify-content: center;
+  }
+  .gameContainer {
+    width: 100%;
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+    justify-items: center;
+    
+
+  }
+}
+
+/* tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .gameSection {
+    margin: 2rem 1.25rem 0px 1.25rem;
+  }
+  .gameImageMain {
+    display: flex;
+    justify-content: center;
+  }
+  .gameContainer {
+    width: 100%;
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    justify-items: center;
+  }
 }

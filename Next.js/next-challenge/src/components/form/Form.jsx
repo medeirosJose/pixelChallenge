@@ -53,7 +53,9 @@ export const Form = () => {
 
   return (
     <>
-      <Title title="Formulário de Vaga" />
+      <div className={styles.pageTitle}>
+        <Title title="Formulário de Vaga" />
+      </div>
       <div className={styles.roleTitle}>{roleText}</div>
       <div className={styles.form}>
         <form onSubmit={handleSubmit}>
