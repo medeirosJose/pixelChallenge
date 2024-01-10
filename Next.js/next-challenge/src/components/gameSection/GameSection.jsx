@@ -7,17 +7,19 @@ import PropTypes from "prop-types";
 export const GameSection = ({ gameData }) => {
   return (
     <div className={styles.gameSection} id="games">
-      <Link
-        href={{
-          pathname: "/game",
-          query: { data: JSON.stringify(gameData[0]) },
-        }}
-        as={`/game/${gameData[0].title}`}
-      >
-        <div className={styles.gameImageMain}>
-          <img src={gameData[0].img} alt="Icon" />
-        </div>
-      </Link>
+      <div className={styles.teste}>
+        <Link
+          href={{
+            pathname: "/game",
+            query: { data: JSON.stringify(gameData[0]) },
+          }}
+          as={`/game/${gameData[0].title}`}
+        >
+          <div className={styles.gameImageMain}>
+            <img src={gameData[0].img} alt="Icon" />
+          </div>
+        </Link>
+      </div>
       <div className={styles.gameContainer}>
         {gameData.map((game, i) => {
           if (i > 0) {
