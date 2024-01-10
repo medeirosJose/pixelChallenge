@@ -15,7 +15,7 @@ export const GameSection = ({ gameData }) => {
         as={`/game/${gameData[0].title}`}
       >
         <div className={styles.gameImageMain}>
-          <Image src={gameData[0].img} alt="Icon" width={1240} height={490} />
+          <img src={gameData[0].img} alt="Icon" />
         </div>
       </Link>
       <div className={styles.gameContainer}>
@@ -29,8 +29,8 @@ export const GameSection = ({ gameData }) => {
                 }}
                 as={`/game/${game.title}`}
               >
-                <div>
-                  <Image src={game.img} alt="Icon" width={400} height={300}  />
+                <div className={styles.gameImageSec}>
+                  <Image src={game.img} alt="Icon" width={400} height={300} />
                 </div>
               </Link>
             );

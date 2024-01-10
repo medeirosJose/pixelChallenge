@@ -8,7 +8,6 @@ import styles from "./styles.module.css";
 import { sanityClient } from "@/utils/sanity";
 
 const Blog = ({ posts }) => {
-  console.log("posts", posts);
 
   return (
     <>

@@ -12,7 +12,7 @@ export const GameCard = ({ title, price, image, link, description }) => {
       </div>
       <div className={styles.card}>
         <div className={styles.cardImage}>
-          <Image src={image} alt="Imagem do jogo" width={1240} height={490} />
+          <img src={image} alt="Imagem do jogo" />
         </div>
         <div className={styles.buyInfo}>
           <p className={styles.buyPrice}>

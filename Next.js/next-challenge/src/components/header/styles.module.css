@@ -60,10 +60,6 @@
   cursor: pointer;
 }
 
-.sanduiche {
-  display: none;
-}
-
 .menuItem:hover {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -80,15 +76,22 @@
   background-color: #fa8400bb;
 }
 
+.groupMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*mobile */
 @media screen and (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-
-  .sanduiche {
-    display: flex;
-  }
   .menu a {
     color: white;
     padding: 14px 16px;

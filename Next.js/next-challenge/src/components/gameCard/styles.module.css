@@ -3,8 +3,16 @@
 }
 
 .cardImage {
+  width: 100%;
+  height: 30rem;
   display: flex;
   justify-content: center;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .buyInfo {
@@ -67,36 +75,19 @@
     align-items: center;
   }
   .buyPrice {
-    color: #fff;
-    font-family: Montserrat;
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
   }
   .buyButton {
     padding: 0.625rem 1.25rem;
-    background-color: #fa8400;
-    color: #023047;
     border-radius: 4px;
-    font-family: Montserrat;
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
-  }
-  .buyButton:hover {
-    color: #001e2d;
-    background-color: #fa8400bb;
   }
   .cardDescription {
-    font-family: Montserrat;
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
     height: 100%;
-    color: #dfdfe4bb;
     text-align: justify;
     text-justify: inter-word;
   }
@@ -106,6 +97,10 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .card {
     margin: 0 1.25rem 1.25rem 1.25rem;
+  }
+  .pageTitle {
+    font-size: 2rem;
+    line-height: 3rem;
   }
   .cardImage {
     display: flex;
@@ -120,35 +115,20 @@
     align-items: center;
   }
   .buyPrice {
-    color: #fff;
-    font-family: Montserrat;
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
   }
   .buyButton {
     padding: 0.625rem 1.25rem;
-    background-color: #fa8400;
-    color: #023047;
     border-radius: 4px;
-    font-family: Montserrat;
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
-  }
-  .buyButton:hover {
-    color: #001e2d;
-    background-color: #fa8400bb;
   }
   .cardDescription {
-    font-family: Montserrat;
     font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.5rem;
     height: 100%;
-    color: #dfdfe4bb;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
