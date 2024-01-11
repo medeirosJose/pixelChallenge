@@ -13,3 +13,5 @@ export const Role = ({ text = "" }) => {
 Role.propTypes = {
   text: PropTypes.string,
 };
+
+export default Role;

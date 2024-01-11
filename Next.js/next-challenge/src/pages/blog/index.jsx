@@ -1,9 +1,9 @@
 // pages/blog.jsx
-import { Header } from "@/components/header/header";
-import { Footer } from "@/components/footer/Footer";
-import { Title } from "@/components/ui/title/Title";
-import BlogCardPri from "@/components/ui/blogCardPri/BlogCardPri";
-import BlogCardSec from "@/components/ui/blogCardSec/BlogCardSec";
+import { Header } from "../../components/header/Header";
+import { Footer } from "../../components//footer/Footer";
+import { Title } from "../../components/ui/title/Title";
+import BlogCardPri from "../../components/ui/blogCardPri/BlogCardPri";
+import BlogCardSec from "../../components/ui/blogCardSec/BlogCardSec";
 import styles from "./styles.module.css";
 import { sanityClient } from "@/utils/sanity";
 
