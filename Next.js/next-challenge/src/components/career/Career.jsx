@@ -27,3 +27,5 @@ export const Career = ({ data }) => {
     </>
   );
 };
+
+export default Career;
