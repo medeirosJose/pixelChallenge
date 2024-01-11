@@ -6,10 +6,14 @@ import BlogCardPri from "../../components/ui/blogCardPri/BlogCardPri";
 import BlogCardSec from "../../components/ui/blogCardSec/BlogCardSec";
 import styles from "./styles.module.css";
 import { sanityClient } from "@/utils/sanity";
+import Head from "next/head";
 
 const Blog = ({ posts }) => {
   return (
     <>
+    <Head>
+        <title>Blog</title>
+    </Head>
       <Header />
       <Title title="Blog"></Title>
       <BlogCardPri

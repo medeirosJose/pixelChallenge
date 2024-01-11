@@ -3,6 +3,7 @@ import { Header } from "../../components/header/Header";
 import { Footer } from "../../components/footer/Footer";
 import styles from "./styles.module.css";
 import { sanityClient } from "@/utils/sanity";
+import Head from "next/head";
 
 const BlogDetail = ({ post }) => {
   if (!post) {
@@ -10,6 +11,9 @@ const BlogDetail = ({ post }) => {
   }
   return (
     <>
+      <Head>
+        <title>{post.title}</title>
+      </Head>
       <Header />
       <div className={styles.wrapperContainer}>
         <div className={styles.postImage}>

@@ -3,6 +3,7 @@ import { Footer } from "../../components/footer/Footer";
 import GameCard from "../../components/gameCard/GameCard";
 import styles from "./styles.module.css";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export const Game = () => {
   const router = useRouter();
@@ -15,6 +16,9 @@ export const Game = () => {
   console.log(typeof data);
   return (
     <>
+      <Head>
+        <title>{data.title}</title>
+      </Head>
       <Header />
       {/* página de um jogo específico */}
       <div className={styles.card}>
