@@ -1,4 +1,4 @@
-import { Header } from "../../components/header/header";
+import { Header } from "../../components/header/Header";
 import { Footer } from "../../components/footer/Footer";
 import GameCard from "../../components/gameCard/GameCard";
 import styles from "./styles.module.css";

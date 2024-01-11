@@ -1,5 +1,5 @@
 // Home.jsx
-import { Header } from "@/components/header/header";
+import { Header } from "../../components/header/Header";
 import { About } from "@/components/about/About";
 import { Career } from "@/components/career/Career";
 import { Footer } from "@/components/footer/Footer";
