@@ -14,3 +14,5 @@ WorkingModel.propTypes = {
   text: PropTypes.string,
 };
 
+export default WorkingModel;
+

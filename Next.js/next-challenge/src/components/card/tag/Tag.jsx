@@ -13,3 +13,5 @@ export const Tag = ({ text = "" }) => {
 Tag.propTypes = {
   text: PropTypes.string,
 };
+
+export default Tag;
