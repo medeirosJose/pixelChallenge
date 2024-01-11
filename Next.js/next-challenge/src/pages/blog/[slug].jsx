@@ -1,19 +1,19 @@
 // pages/blog/[slug].jsx
-import { useRouter } from "next/router";
 import { Header } from "../../components/header/Header";
 import { Footer } from "../../components/footer/Footer";
 import styles from "./styles.module.css";
 import { sanityClient } from "@/utils/sanity";
 
 const BlogDetail = ({ post }) => {
-  const router = useRouter();
-
+  if (!post) {
+    return <div>Carregando...</div>;
+  }
   return (
     <>
       <Header />
       <div className={styles.wrapperContainer}>
         <div className={styles.postImage}>
-          <img src={post.img} alt="Imagem do post" />
+          <img src={post?.img} alt="Imagem do post" />
         </div>
       </div>
       <div className={styles.textArea}>
@@ -40,23 +40,39 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+  console.log("Params:", params);
+
+  // Check if the slug parameter is undefined
+  if (!params || !params.slug) {
+    return {
+      notFound: true,
+    };
+  }
+
   const { slug } = params;
 
-  const post = await sanityClient.fetch(
+  const posts = await sanityClient.fetch(
     `*[_type == "post" && title == $title] {
-        title,
-        author,
-        date,
-        synopsis,
-        text,
-        "img": img.asset->url
-      }`,
+      title,
+      author,
+      date,
+      synopsis,
+      text,
+      "img": img.asset->url
+    }`,
     { title: decodeURIComponent(slug) }
   );
 
+  // Check if the post array is not empty before accessing its properties
+  if (posts.length === 0) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
-      post: post[0],
+      post: posts[0],
     },
     revalidate: 1,
   };

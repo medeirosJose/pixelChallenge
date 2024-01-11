@@ -32,7 +32,7 @@ export const GameCard = ({ title, price, image, link, description }) => {
 
 GameCard.propTypes = {
   title: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
   image: PropTypes.string.isRequired,
   link: PropTypes.string,
   description: PropTypes.string.isRequired,

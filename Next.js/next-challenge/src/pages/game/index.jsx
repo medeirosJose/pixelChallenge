@@ -6,7 +6,13 @@ import { useRouter } from "next/router";
 
 export const Game = () => {
   const router = useRouter();
+  const rawData = router.query.data;
+
+  if (!rawData) {
+    return <div>Carregando...</div>;
+  }
   const data = JSON.parse(router.query.data);
+  console.log(typeof data);
   return (
     <>
       <Header />
@@ -16,7 +22,6 @@ export const Game = () => {
           title={data.title}
           price={data.price}
           image={data.img}
-          link={"#"}
           description={data.description}
         />
       </div>
