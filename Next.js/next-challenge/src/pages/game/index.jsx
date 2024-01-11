@@ -1,6 +1,6 @@
-import { Header } from "@/components/header/header";
-import { Footer } from "@/components/footer/Footer";
-import GameCard from "@/components/gameCard/GameCard";
+import { Header } from "../../components/header/header";
+import { Footer } from "../../components/footer/Footer";
+import GameCard from "../../components/gameCard/GameCard";
 import styles from "./styles.module.css";
 import { useRouter } from "next/router";
 

@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import styles from "./styles.module.css";
 
 import WorkingModel from "./workingModel/WorkingModel";
-import Role from "./role/role";
 import Tag from "./tag/Tag";
+import Role from "./role/Role";
 
 const CardCareer = ({ workingModelText, roleText, tagText }) => {
   return (
