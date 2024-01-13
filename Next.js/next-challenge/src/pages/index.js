@@ -8,6 +8,7 @@ import "@fontsource/montserrat";
 import "@fontsource/press-start-2p";
 import { createClient } from "next-sanity";
 import Head from "next/head";
+
 export default function Home({ gamesData, careers }) {
   return (
     <>
