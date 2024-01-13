@@ -12,7 +12,7 @@ No geral, é um desafio focado na parte do Front-End, há pouquíssimas interaç
 
 
 
-## Apêndice
+## Informações Uteis
 
 O conteúdo do desafio está dividido em duas pastas dentro do repositório. 
 
