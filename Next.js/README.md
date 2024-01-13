@@ -8,19 +8,19 @@ A proposta do desafio é aplicar os conhecimentos em ReactJS e Next.js. Além de
 No geral, é um desafio focado na parte do Front-End, há pouquíssimas interações com o Back-End.\
   &nbsp;
 
-
-
-
-
-## Informações Uteis
+## 🚩 Informações Uteis
 
 O conteúdo do desafio está dividido em duas pastas dentro do repositório. 
 
 Toda a lógica de programação, bem como as interfaces e conteúdo visual estão dentro de _next-challenge_, enquanto que toda a configuração do CMS Sanity, como a definição dos schemas, está dentro de _sanity-project_.\
   &nbsp;
 
+## 🔗 Resultado
 
-##  Principais Ferramentas e Tecnologias
+O projeto foi _buildado_ e _deployado_ no Vercel, podendo acessado através deste [link](https://pixel-challenge-jose-medeiros.vercel.app).\
+  &nbsp;
+  
+## 🌐 Principais Ferramentas e Tecnologias
 
 [Sanity](https://www.sanity.io) - CMS
 
