@@ -5,8 +5,19 @@ Esse projeto consiste em elaborar uma landing page de um blog sobre jogos retrô
 
 A proposta do desafio é aplicar os conhecimentos em ReactJS e Next.js. Além de seguir as interfaces no Figma, foi utilizado o Content Management System (CMS) [Sanity](https://www.sanity.io) como forma de popular os conteúdos do Blog, bem como os jogos disponíveis para "venda".
 
-No geral, é um desafio focado na parte do Front-End, há pouquíssimas interações com o Back-End.
+No geral, é um desafio focado na parte do Front-End, há pouquíssimas interações com o Back-End.\
+  &nbsp;
 
+
+
+
+
+## Apêndice
+
+O conteúdo do desafio está dividido em duas pastas dentro do repositório. 
+
+Toda a lógica de programação, bem como as interfaces e conteúdo visual estão dentro de _next-challenge_, enquanto que toda a configuração do CMS Sanity, como a definição dos schemas, está dentro de _sanity-project_.\
+  &nbsp;
 
 
 ##  Principais Ferramentas e Tecnologias
