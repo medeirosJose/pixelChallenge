@@ -8,17 +8,17 @@ const BlogCardSec = ({ title, image, link, description, author, date }) => {
   return (
     <div className={styles.card}>
       <Link href={`/blog/${encodeURIComponent(link)}`}>
-        <div className={styles.cardImage}>
-          <Image
-            src={image}
-            alt="Imagem do post"
-            width={390}
-            height={220}
-            style={{ borderRadius: "3px" }}
-          />
-        </div>
-        <div className={styles.cardContent}>
-          <h2 className={styles.cardTitle}>{title}</h2>
+        <div className={styles.cardWrapper}>
+          <div className={styles.cardImage}>
+            <img
+              src={image}
+              alt="Imagem do post"
+              style={{ borderRadius: "3px" }}
+            />
+          </div>
+          <div className={styles.cardContent}>
+            <h2 className={styles.cardTitle}>{title}</h2>
+          </div>
         </div>
       </Link>
     </div>

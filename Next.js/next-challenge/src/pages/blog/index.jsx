@@ -11,9 +11,9 @@ import Head from "next/head";
 const Blog = ({ posts }) => {
   return (
     <>
-    <Head>
+      <Head>
         <title>Blog</title>
-    </Head>
+      </Head>
       <Header />
       <Title title="Blog"></Title>
       <BlogCardPri
@@ -25,7 +25,7 @@ const Blog = ({ posts }) => {
         image={posts[0].img}
         link={posts[0].title}
       />
-      <div className={styles.card}>
+      <div className={styles.cardSec}>
         {posts.slice(1).map((post) => (
           <BlogCardSec
             key={post.title}

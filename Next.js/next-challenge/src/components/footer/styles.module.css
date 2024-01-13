@@ -27,6 +27,9 @@
     font-size: 0.875rem;
     line-height: 1.125rem;
   }
+  .footer {
+    height: 2.25rem;
+  }
 }
 
 /* tablets */
@@ -34,5 +37,8 @@
   .text {
     font-size: 0.875rem;
     line-height: 1.125rem;
+  }
+  .footer {
+    height: 2.25rem;
   }
 }

@@ -1,11 +1,10 @@
-.card {
+.cardSec {
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: repeat(3, 1fr);
   margin: 2.2rem 6.25rem 0px 6.25rem;
   gap: 2.2rem;
 }
-
 .wrapperContainer {
   display: flex;
   justify-content: center;
@@ -65,16 +64,18 @@
   text-align: left;
   color: #dfdfe4bb;
   word-wrap: break-word;
+  text-align: justify;
+  text-justify: inter-word;
 }
-
 /* mobile */
-@media screen and (max-width: 767px) {
-  .card {
+@media (max-width: 768px) {
+  .cardSec {
+    /* ok */
     display: flex;
     flex-direction: column;
-    margin: 0 1.25rem 1.25rem 1.25rem;
+    width: 100%;
+    margin: 0;
   }
-
   .wrapperContainer {
     display: flex;
     justify-content: center;
@@ -82,8 +83,8 @@
   }
 
   .postImage {
-    width: 100%;
-    height: 110vw;
+    width: 90%;
+    height: 100%;
     object-fit: cover;
     display: flex;
     justify-content: center;
@@ -99,6 +100,8 @@
   .textArea {
     padding: 0px 1.25rem 0px 1.25rem;
     margin-bottom: 115px;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .postTitle {
@@ -131,17 +134,22 @@
     text-align: left;
     color: #dfdfe4bb;
     word-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 
 /* tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .card {
+@media (min-width: 768px) and (max-width: 1366px) {
+  .cardSec {
+    /* ok */
     display: flex;
     flex-direction: column;
-    margin: 0 1.25rem 1.25rem 1.25rem;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
   }
-
   .wrapperContainer {
     display: flex;
     justify-content: center;
@@ -149,8 +157,8 @@
   }
 
   .postImage {
-    width: 100%;
-    height: 110vw;
+    width: 90%;
+    height: 100%;
     object-fit: cover;
     display: flex;
     justify-content: center;
